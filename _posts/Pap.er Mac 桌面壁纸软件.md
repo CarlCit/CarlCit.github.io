@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Paper Mac 桌面壁纸软件"
 subtitle: "是一款专门为 macOS 设计的精美壁纸应用，每天更新全球最新高清壁纸；适合喜欢寻找壁纸来改变心情的你。"
@@ -5,6 +6,7 @@ date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg-2015.jpg"
 tags: [Paper, macOS]
+---
 
 
 

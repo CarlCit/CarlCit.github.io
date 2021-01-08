@@ -1,3 +1,4 @@
+---
 layout: post
 title: "macOS 系统打包 dmg 文件方法"
 subtitle: "使用 macOS 系统创建 dmg 文件"
@@ -5,6 +6,7 @@ date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg-2015.jpg"
 tags: [macOS, dmg]
+---
 
 # 准备工作
 

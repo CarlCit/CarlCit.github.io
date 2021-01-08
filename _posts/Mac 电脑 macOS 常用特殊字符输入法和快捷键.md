@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Mac 电脑 macOS 系统常用特殊字符输入法"
 subtitle: "特殊字符输入"
@@ -5,7 +6,7 @@ date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg-2015.jpg"
 tags: [Mac, macOS, 特殊字符]
-
+---
 
 
 # Mac 电脑 macOS 常用特殊字符输入法
