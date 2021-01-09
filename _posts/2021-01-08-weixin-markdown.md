@@ -5,7 +5,9 @@ subtitle: "使用 Markdown 编辑微信公众号图文"
 date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg-2015.jpg"
-tags: [微信, Markdown]
+tags: 
+ - 微信
+ - Markdown
 ---
 
 
