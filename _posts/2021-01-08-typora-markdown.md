@@ -5,7 +5,9 @@ subtitle: "编辑器 Typora 中如何使用 Markdown 语法格式"
 date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg-2015.jpg"
-tags: [Typora, Markdown]
+tags: 
+ - Typora
+ - Markdown
 ---
 
 
