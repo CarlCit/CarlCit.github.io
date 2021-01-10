@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "Typora 的 Markdown 使用语法格式"
-subtitle: "编辑器 Typora 中如何使用 Markdown 语法格式"
+subtitle: "编辑器 Typora 中如何使用 Markdown 语法"
 date: 2021-01-08
 author: "Carl"
-header-img: "img/post-bg-2015.jpg"
-tags: [Typora, Markdown]
+header-img: "img/post-bg.jpg"
+header-mask: 0.3
+mathjax: true
+tags: 
+  - Typora
+  - Markdown
+  - application
 ---
 
 
@@ -46,7 +51,7 @@ tags: [Typora, Markdown]
 
 Markdown 使用电子邮件样式>字符进行块引用。它们表示为：
 
-```
+```ruby
 > This is a blockquote with two paragraphs. This is first paragraph.
 >
 > This is second pragraph. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -64,7 +69,7 @@ Markdown 使用电子邮件样式>字符进行块引用。它们表示为：
 
 输入 `1. list item 1` 将创建一个有序列表 - 其降序源代码如下：
 
-```
+```ruby
 ## un-ordered list
 *   Red
 *   Green
@@ -80,7 +85,7 @@ Markdown 使用电子邮件样式>字符进行块引用。它们表示为：
 
 任务列表是标记为 [] 或 [x] （不完整或完整）的项目的列表。例如：
 
-```
+```ruby
 - [ ] a task list item
 - [ ] list syntax required
 - [ ] normal **formatting**, @mentions, #1234 refs
@@ -98,7 +103,7 @@ Typora 仅支持 GitHub Flavored Markdown 中的栅栏。不支持 markdown 中�
 
 使用栅栏很简单：输入
 
-```
+```cpp
 [```]
 ```
 
@@ -106,7 +111,7 @@ Typora 仅支持 GitHub Flavored Markdown 中的栅栏。不支持 markdown 中�
 
 Here’s an example:
 
-```
+```cpp
 function test() {
   console.log("notice the blank line before this function?");
 }
@@ -114,7 +119,7 @@ function test() {
 
 syntax highlighting:
 
-```
+```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
@@ -126,11 +131,13 @@ puts markdown.to_html
 
 要添加数学表达式，请输入 `$$` 并按“return”键。这将触发一个接受 *Tex / LaTex* 源的输入字段。例如：
 
+$$
 V1×V2=∣ijk∂X∂u∂Y∂u0∂X∂v∂Y∂v0∣\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\ \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\ \end{vmatrix} V1×V2=∣∣∣∣∣∣i∂u∂X∂v∂Xj∂u∂Y∂v∂Yk00∣∣∣∣∣∣
+$$
 
 在 markdown 源文件中，math 块是由一对 ‘$$’ 标记包装的 *LaTeX* 表达式：
 
-```
+```ruby
 $$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
@@ -152,7 +159,7 @@ $$
 
 在 markdown 源代码中，它们看起来像：
 
-```
+```ruby
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
@@ -163,7 +170,7 @@ $$
 
 最后，通过 `:` 在标题行中包含冒号（），您可以将该列中的文本定义为左对齐，右对齐或居中对齐：
 
-```
+```ruby
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
@@ -175,7 +182,7 @@ $$
 
 ###  脚注
 
-```
+```ruby
 You can create footnotes like this[^footnote].
 [^footnote]: Here is the *text* of the **footnote**.
 ```
@@ -233,7 +240,7 @@ This is [an example](https://example.com/ "Title") inline link.
 
 参考样式链接使用第二组方括号，在其中放置您选择的标签以标识链接：
 
-```
+```ruby
 This is [an example][id] reference-style link.
 
 Then, anywhere in the document, you define your link label on a line by itself like this:
@@ -247,7 +254,7 @@ Then, anywhere in the document, you define your link label on a line by itself l
 
 隐式链接名称快捷方式允许您省略链接的名称，在这种情况下，链接文本本身将用作名称。只需使用一组空的方括号 - 例如，将“Google”一词链接到 [google.com](http://google.com) 网站，您只需编写：
 
-```
+```ruby
 [Google][]
 And then define the link:
 
@@ -268,7 +275,7 @@ Typora 还会自动链接标准网址。例如：[www.google.com](http://www.goo
 
 图像具有与链接类似的语法，但它们 `!` 在链接开始之前需要额外的字符。插入图像的语法如下所示：
 
-```
+```ruby
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
@@ -287,7 +294,7 @@ Typora 还会自动链接标准网址。例如：[www.google.com](http://www.goo
 
 Markdown 将星号（`*`）和下划线（`_`）视为重点的指标。用一个包装的文本`*`或`_`将用 HTML `<em>` 标签包装的文本。例如：
 
-```
+```ruby
 *single asterisks*
 _single underscores_
 ```
@@ -306,7 +313,7 @@ GFM将忽略单词中的下划线，这通常用于代码和名称，如下所�
 
 要在其它方式用作强调分隔符的位置生成文字星号或下划线，可以反斜杠转义：
 
-```
+```ruby
 \*this text is surrounded by literal asterisks\*
 ```
 
@@ -316,7 +323,7 @@ Typora 建议使用该 `*` 符号。
 
 一个 double `*` 或 `_` 将导致其包含的内容用 HTML `<strong>` 标记包装，例如：
 
-```
+```ruby
 **double asterisks**
 __double underscores__
 ```
@@ -333,7 +340,7 @@ Typora 建议使用该 `**` 符号。
 
 要指示代码的内联跨度，请使用反引号（`）进行包装。与预格式化的代码块不同，代码跨度表示正常段落中的代码。例如：
 
-```
+```ruby
 Use the `printf()` function.
 ```
 
@@ -347,11 +354,15 @@ GFM 添加语法来创建删除线文本，标准 Markdown 中缺少该文本。
 
 `~~Mistaken text.~~` 变 错误的文字。
 
+~~Mistaken text.~~
+
 ###  下划线
 
 下划线由原始 HTML 提供支持。
 
 `<u>Underline</u>`成为下划线。
+
+<u>Underline</u>
 
 ###  表情符号：开心：
 
@@ -367,7 +378,7 @@ GFM 添加语法来创建删除线文本，标准 Markdown 中缺少该文本。
 
 要触发内联数学的内联预览：输入“$”，然后 `ESC` 按键，然后输入 TeX 命令。
 
-lim⁡x→∞exp⁡(−x)=0\lim_{x \to \infty} \exp(-x) = 0limx→∞exp(−x)=0
+$\lim_{x \to \infty} \exp(-x) = 0$
 
 你可以[在这里](https://support.typora.io/Math/)找到更多细节。
 
@@ -375,31 +386,31 @@ lim⁡x→∞exp⁡(−x)=0\lim_{x \to \infty} \exp(-x) = 0limx→∞exp(−x)=0
 
 要使用此功能，请先在 `Preference` 面板 - > `Markdown`选项卡中启用它。然后，用于 `~` 包装下标内容。例如：`H~2~O`，`X~long\ text~`/
 
-H2O`，`Xlong text`/
+H~2~O，X~long\ text~/
 
 ###  标
 
 要使用此功能，请先在 `Preference` 面板 - > `Markdown`选项卡中启用它。然后，`^` 用来包装上标内容。例如：`X^2^`。
 
-X2
+X^2^
 
 ###  突出
 
 要使用此功能，请先在 `Preference` 面板 - > `Markdown`选项卡中启用它。然后，用于 `==` 包装高亮内容。例如：`==highlight==`。
 
-highlight
+==highlight==
 
 ##  HTML
 
 您可以使用 HTML 来设置纯 Markdown 不支持的内容。例如，用于 `<span style="color:red">this text is red</span>` 添加红色文本。
 
-this text is red
+<span style="color:red">this text is red</span>
 
 ###  嵌入内容
 
 有些网站提供基于 iframe 的嵌入代码，您也可以将其粘贴到 Typora 中。例如：
 
-```
+```ruby
 <iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 ```
 
@@ -409,7 +420,7 @@ this text is red
 
 您可以使用 `<video>`HTML 标记嵌入视频。例如：
 
-```
+```ruby
 <video src="xxx.mp4" />
 ```
 

@@ -1,11 +1,16 @@
 ---
 layout: post
-title: "微信图文编辑 Markdown 页面模版"
-subtitle: "使用 Markdown 编辑微信公众号图文"
+title: "微信图文 Markdown 页面模版"
+subtitle: "使用 Markdown 编辑weixin公众号图文"
 date: 2021-01-08
 author: "Carl"
-header-img: "img/post-bg-2015.jpg"
-tags: [微信, Markdown]
+header-img: "img/post-bg.jpg"
+header-mask: 0.3
+mathjax: true
+tags: 
+  - Tips
+  - weixin
+  - Markdown
 ---
 
 

@@ -77,7 +77,7 @@ ga_domain: haijc.cn
 # Sidebar settings
 sidebar: true                           # 是否开启侧边栏
 sidebar-about-description: "～努力成长<br>只为更好～"  # 题图简单描述
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -102,12 +102,15 @@ page-mathjax: false
 friends: [
     {
         title: "Hux Blog",
-        href: "http://huangxuan.me"
+        href: "https://huangxuan.me"
     },{
         title: "乱序",
-        href: "http://mida.re/"
+        href: "https://mida.re"
     },{
         title: "Sherry Wu",
         href: "https://xuechundesign.github.io"
+    },{
+        title: "雨戈林多",
+        href: "https://moonagic.com"
     }
 ]
