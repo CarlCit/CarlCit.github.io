@@ -9,7 +9,7 @@ header-mask: 0.3
 mathjax: true
 tags: 
   - Tips
-  - weixin
+  - WeChat
   - Markdown
 ---
 

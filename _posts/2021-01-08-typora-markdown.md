@@ -8,9 +8,9 @@ header-img: "img/post-bg.jpg"
 header-mask: 0.3
 mathjax: true
 tags: 
+  - App
   - Typora
   - Markdown
-  - application
 ---
 
 

@@ -8,9 +8,19 @@
 <ul class="list-inline">
 {% endif %}
 
+  {% if site.instagram_username %}
+  <li>
+    <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  {% endif %}
   {% if site.weibo_username %}
   <li>
-    <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+    <a target="_blank" href="https://weibo.com/{{ site.weibo_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
@@ -38,12 +48,12 @@
     </a>
   </li>
   {% endif %}
-  {% if site.facebook_username %}
+  {% if site.youtube_username %}
   <li>
-    <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+    <a target="_blank" href="https://www.youtube.com/channel/{{ site.youtube_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
       </span>
     </a>
   </li>
@@ -60,20 +70,10 @@
   {% endif %}
   {% if site.RSS %}
   <li>
-    <a href="{{ "https://haijc.cn/feed.xml" | prepend: site.baseurl }}">
+    <a target="_blank" href="{{ "https://haijc.cn/feed.xml" | prepend: site.baseurl }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  {% endif %}
-  {% if site.linkedin_username %}
-  <li>
-    <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span>
     </a>
   </li>

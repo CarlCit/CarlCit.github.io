@@ -40,7 +40,7 @@ task :post do
     post.puts "date: #{date}"
     post.puts "author: \"Carl\""
     post.puts "header-img: \"img/post-bg.jpg\""
-    post.puts "tags: []"
+    post.puts "tags: [Study,Life,Work,Course,Apple,Digit,App,Tips]"
     post.puts "---"
   end
 end # task :post
