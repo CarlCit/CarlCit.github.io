@@ -1,9 +1,9 @@
 # Site settings
 title: CarlのBlog                     # 你的博客网站标题
-SEOTitle: 武汉同学的博客 | CarlのBlog        # SEO，显示在浏览器上搜索的时候显示的标题
+SEOTitle: 武汉同学的博客｜CarlのBlog        # SEO，显示在浏览器上搜索的时候显示的标题
 header-img: img/home-bg.jpg        # 显示在首页的背景图片
 email: carlsonglin@me.com
-description:  "个人学习"              # 网站介绍
+description:  "个人学习笔记，经验分享"              # 网站介绍
 keyword: "武汉同学, Carl, Blog, CarlBlog, 数码科技"    # 关键词
 url: "https://haijc.cn"           # 这个就是填写你的博客地址
 baseurl: ""                 # for example, '/blog' if your blog hosted on 'host/blog'
@@ -103,7 +103,7 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "Hux Blog",
+        title: "Hux",
         href: "https://huangxuan.me"
     },{
         title: "Sherry Wu",
@@ -111,5 +111,14 @@ friends: [
     },{
         title: "雨戈林多",
         href: "https://moonagic.com"
+    },{
+        title: "sleele",
+        href: "https://sleele.com"
+    },{
+        title: "Sukka",
+        href: "https://blog.skk.moe"
+    },{
+        title: "MARKSZ",
+        href: "https://molunerfinn.com"
     }
 ]
