@@ -1,36 +1,35 @@
 ---
 layout: post
 title: "Mac 电脑 macOS 系统常用特殊字符输入法"
-subtitle: "特殊字符输入方法"
+subtitle: "特殊字符快捷键"
 date: 2021-01-08
 author: "Carl"
 header-img: "img/post-bg.jpg"
 header-style: text
 mathjax: true
 tags: 
-  - Apple
   - macOS
   - 快捷键
 ---
 
 > Mac 电脑 macOS 常用特殊字符输入法
 
-⌘（command）
+```⌘```（command）
 
-⌥（option/alt）
+```⌥```（option/alt）
 
-⇧（shift）
+```⇧```（shift）
 
-⌃（control）
+```⌃```（control）
 
-⎋（esc）
+```⎋```（esc）
 
 等这些符号在 Mac 中叫做「技术符号」
 
-- 被咬掉一口的苹果标识只需要组合键被咬掉：Option+Shift+K 
-- 大写锁定下，按住 Option＋8 可以按出 •
-- 中文输入状态下，按 Shift＋字母 可以打出大写字母，如 L
-- Option＋V 可以打出 √
+- 被咬掉一口的苹果标识只需要组合键被咬掉：Option+Shift+K ``````
+- 大写锁定下，按住 Option＋8 可以按出 ```•```
+- 中文输入状态下，按 Shift＋字母 可以打出大写字母，如 ```L```
+- Option＋V 可以打出 ```√```
 - 按住 Control＋Command＋空格可以调出特殊字符 非常多
 - 按下 Option+G 就可以插入漂亮的版权符号（©）了
 - 美分(￠)：Option+4
