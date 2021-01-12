@@ -14,6 +14,10 @@ tags:
 
 
 
+### 简单介绍
+
+
+
 通过 Terminal 访问 Unix 工具包的 Mac 用户，会选择安装 Xcode IDE 的可选命令行工具子部分 Command Line Tools。
 
 
@@ -66,7 +70,7 @@ git version
 
 ![clt5.jpeg](https://segmentfault.com/img/bVbnSyX)
 
-### 这个包实际安装在哪
+#### 这个包实际安装路径
 
 如果你对这个包中到底有什么东西感兴趣，可以自己查看这个包中的内容。它安装在mac的根目录中
 
@@ -76,11 +80,12 @@ git version
 
 
 
-61个可用的新命令，都在```/Library/Developer/CommandLineTools/usr/bin```中。
+108 个可用的新命令，都在```/Library/Developer/CommandLineTools/usr/bin```中。
 
-下面按字母顺序列出这些命令：
+列出这些命令：
 
-```
+```bash
+CarliMac:bin Carl$ ls
 2to3				lldb
 2to3-3.8			llvm-cov
 DeRez				llvm-cxxfilt
@@ -136,3 +141,8 @@ lex				vtool
 libtool				xml2man
 lipo				yacc
 ```
+
+
+
+### 使用教程
+
