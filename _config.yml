@@ -1,6 +1,6 @@
 # Site settings
 title: CarlのBlog                     # 你的博客网站标题
-SEOTitle: 武汉同学的博客｜CarlのBlog        # SEO，显示在浏览器上搜索的时候显示的标题
+SEOTitle: CarlのBlog        # SEO，显示在浏览器上搜索的时候显示的标题
 header-img: img/home-bg.jpg        # 显示在首页的背景图片
 email: carlsonglin@me.com
 description:  "个人学习笔记，经验分享"              # 网站介绍
@@ -96,7 +96,7 @@ service-worker: true
 
 
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
+page-mathjax: fslse
 
 
 
@@ -106,8 +106,8 @@ friends: [
         title: "Hux",
         href: "https://huangxuan.me"
     },{
-        title: "Sherry Wu",
-        href: "https://xuechundesign.github.io"
+        title: "Sherry Woo",
+        href: "https://sherrywoo.me"
     },{
         title: "雨戈林多",
         href: "https://moonagic.com"
@@ -120,5 +120,8 @@ friends: [
     },{
         title: "MARKSZ",
         href: "https://molunerfinn.com"
+    },{
+        title: "Bryce Yang",
+        href: "https://todebug.com"
     }
 ]
