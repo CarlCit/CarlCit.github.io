@@ -10,7 +10,7 @@ tags:
   - Tips
   - LaTeX
   - Markdown
-  - 
+  - Kramdown
 ---
 
 
@@ -79,25 +79,31 @@ $\boldsymbol{E = mc^2}$
 上下标及常用符号
 
 ```
-$y_N, y_{_N},$
+$y_N$
+$y_{_N}$
 ```
 
-$y_N, y_{_N},$
+$y_N$ , 
+$y_{_N}$
 
 ```
-H~2~O
-```
-
-$ H~2~O $
-
-```
-X^2^
+$ H_{2}O $
 ```
 
 
 
+$ H_{2}O $
 
-$ X^2^ $
+
+
+```
+$ X^2 $
+```
+
+
+
+
+$X^2$
 
 
 
@@ -470,4 +476,168 @@ $ a * b = c ^ d $
 $ 2^{\frac{n-1}{3}} $
 
 $ \int\_a^b f(x)\,dx.$
+
+
+
+
+
+#### https://kramdown.gettalong.org/syntax.html
+
+
+
+```
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
+```
+
+
+
+效果：
+
+
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
+
+
+如上
+
+
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
+| Second body
+| 2 line
+|===
+| Footer row
+
+
+The above example table is rather time-consuming to create without the help of an ASCII table editor. However, the table syntax is flexible and the above table could also be written like this:
+
+
+
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
+
+
+Here is an example for a kramdown table with a table header row, two table bodies and a table footer row:
+
+* * *
+
+---
+
+_  _  _  _
+
+---------------
+
+Here are some example footer separator lines:
+
+|====+====|
++====|====+
+|=========|
+|=
+
+
+Here are some example header separator lines with alignment definitions:
+
+|---+---+---|
++ :-: |:------| ---:|
+| :-: :- -: -
+:-: | :-
+
+
+Here are some example separator lines:
+
+|----+----|
++----|----+
+|---------|
+|-
+| :-----: |
+-|-
+
+
+As mentioned at the beginning, an optional IAL for applying attributes to a term or a definition can be used:
+
+
+{:#term} Term with id="term"
+: {:.cls} Definition with class "cls"
+
+{:#term1} First term
+{:#term2} Second term
+: {:.cls} Definition
+
+
+The definition for a term is made up of text and/or block-level elements. If a definition is not preceded by a blank line, the first part of the definition will just be text if it would be a paragraph otherwise:
+
+definition term
+: This definition will just be text because it would normally be a
+  paragraph and the there is no preceding blank line.
+
+  > although the definition contains other block-level elements
+
+: This definition *will* be a paragraph since it is preceded by a
+  blank line.
+
+
+
+
+As mentioned at the beginning, an optional IAL for applying attributes to a list item can be used after the list item marker:
+
+  * {:.cls} This item has the class "cls".
+    Here continues the above paragraph.
+
+* This is a normal list item.
+
+
+
+* kram
++ down
+- now
+
+1. kram
+2. down
+3. now
+
+
 
