@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll 博客 Markdown 的 Kramdown解析器"
-subtitle: "公式编辑开启及测试"
+subtitle: "编辑器常用语法"
 date: 2021-01-13
 author: "Carl"
 mathjax: true
@@ -23,9 +23,9 @@ Markdown 是一种轻量型标记语言， 其目的在于为以网页为载体�
 
 
 
-> Kramdown	[官网链接](https://kramdown.gettalong.org/documentation.html)	[语法文档中文翻译](http://pikipity.github.io/blog/kramdown-syntax-chinese-1.html)
+> Kramdown	[官网链接](https://kramdown.gettalong.org/documentation.html)；	[语法文档中文翻译](http://pikipity.github.io/blog/kramdown-syntax-chinese-1.html)
 
-> Markdown	[语法文档](https://daringfireball.net/projects/markdown/syntax)	[ 中文说明文档PDF](http://alfred-sun.github.io/media/documents/MarkDown轻量级标记语言.pdf)
+> Markdown	[语法文档](https://daringfireball.net/projects/markdown/syntax)；	[ 中文说明文档PDF](http://alfred-sun.github.io/media/documents/MarkDown轻量级标记语言.pdf)
 
 
 
@@ -213,15 +213,7 @@ $\fbox{E=mc^2}$
 $\mathbf{E = mc^2}$
 $\boldsymbol{E = mc^2}$
 
-上下标及常用符号
 
-```
-$y_N$
-$y_{_N}$
-```
-
-$y_N$ , 
-$y_{_N}$
 
 ```
 $ H_{2}O $
@@ -251,10 +243,10 @@ $$ \sideset{^1_2}{^3_4}\bigotimes $$
 $$ \sideset{^1_2}{^3_4}\bigotimes $$
 
 ```cpp
-$$ x_{k}^2\quad \sqrt{x}\quad \sqrt[3]{x+y} $$
+$$x_{k}^2\quad \sqrt{x}\quad \sqrt[3]{x+y}$$
 ```
 
-$$ x_{k}^2\quad \sqrt{x}\quad \sqrt[3]{x+y} $$
+$$x_{k}^2\quad \sqrt{x}\quad \sqrt[3]{x+y}$$
 
 
 
@@ -274,7 +266,7 @@ $A\large  A  \small A$
 $$ x_1, x_2, \dots, x_n\quad 1,2,\cdots,n\quad \vdots\quad \ddots $$
 ```
 
-$$ x_1, x_2, \dots, x_n\quad 1,2,\cdots,n\quad \vdots\quad \ddots $$
+$$x_1, x_2, \dots, x_n\quad 1,2,\cdots,n\quad \vdots\quad \ddots$$
 
 
 
@@ -334,10 +326,14 @@ $
 
 ```ruby
 $\Bigg( \bigg( \Big( \big((x) \big) \Big) \bigg) \Bigg)$
+
 $\Bigg\{ \bigg\{ \Big\{ \big\{\{x\} \big\} \Big\} \bigg\} \Bigg\}$
 ```
 
 $\Bigg( \bigg( \Big( \big((x) \big) \Big) \bigg) \Bigg)$
+
+
+
 $\Bigg\{ \bigg\{ \Big\{ \big\{\{x\} \big\} \Big\} \bigg\} \Bigg\}$
 
 
@@ -346,7 +342,7 @@ $\Bigg\{ \bigg\{ \Big\{ \big\{\{x\} \big\} \Big\} \bigg\} \Bigg\}$
 $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 ```
 
-$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
+$$f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)$$
 
 
 
