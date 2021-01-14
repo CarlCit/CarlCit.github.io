@@ -30,28 +30,46 @@ Mac 电脑 macOS 常用特殊字符输入法：
 
 * •	：大写锁定下，按住 Option＋8
 
-* L	：中文输入状态下，按 Shift＋字母 打出大写字母
-
-* √	：Option＋V 可以打出
+* L	：中文输入状态下，Shift＋字母 打出大写
 
 * ©	：按下 Option+G 就可以插入版权符号
+
 * ¢	：美分 Option+4
 
 * ￡	：英镑 Option+3
+
 * ￥	：日元/人民币 Option+Y
-* €	：欧元Shift+Option+2
+
+* €	：欧元 Shift+Option+2
+
 * ≈	：约等于 Option+X
+
 * °	：度 Shift+Option+8
+
 * ÷	：除号 Option+/
+
 * ∞	：无穷 Option+5
+
 * ≤	：小于等于 Option+,
+
 * ≥	：大于等于 Option+.
+
 * ≠	：不等于 Option+=
+
 * π	：Pi Option+P
+
 * ±	：加减 Shift+Option+=
+
 * √	：平方根 Option+V
+
 * ∑	：求和 Option+W
+
 * ™	：商标符号 Option+2 
+
 * ®	：注册商标符号 Option+R
-* 快速调用 emoji 表情：⌘（command）+ ⌃（control）+ 空格键
+
+* emoji 表情 ： ⌘ + ⌃ + 空格键
+
 * 按 ⌥ + ⎋ + ⌘ 组合键强制退出应用
+
+* 更多特殊符号 ： ⌘ + ⌃ + 空格键

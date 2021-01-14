@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll 编辑 Markdown 使用 LaTeX 公式"
+title: "Jekyll 博客 Markdown 的 Kramdown解析器"
 subtitle: "公式编辑开启及测试"
 date: 2021-01-13
 author: "Carl"
@@ -8,16 +8,146 @@ mathjax: true
 header-img: "img/post-bg.jpg"
 tags: 
   - Tips
-  - LaTeX
   - Markdown
   - Kramdown
+  - LaTeX
 ---
 
 
 
-公式开启
+### 简介
 
-头文件添加
+kramdown 是一个用Ruby实现的Markdown的解析器。
+
+Markdown 是一种轻量型标记语言， 其目的在于为以网页为载体的文章的排版提供一种较 HTML 来说更简便、更安全、可读性更强的书写方式。它并不是HTML 的替代品，使用 Markdown 的语法编写的文章最终都要通过其翻译器转换成 HTML 代码。Github Pages 采用 Kramdown 解析器，所以当前这个博客是推荐使用这个语法。
+
+
+
+> Kramdown	[官网链接](https://kramdown.gettalong.org/documentation.html)	[语法文档中文翻译](http://pikipity.github.io/blog/kramdown-syntax-chinese-1.html)
+
+> Markdown	[语法文档](https://daringfireball.net/projects/markdown/syntax)	[ 中文说明文档PDF](http://alfred-sun.github.io/media/documents/MarkDown轻量级标记语言.pdf)
+
+
+
+kramdown 语法是基于 Markdown 语法建立并加入了一些其他 Markdown 扩展版本（例如，Maruku、PHP Markdown Extra 和 Pandoc）所具有的特性。不仅如此，它努力去提供一个包括明确规则的严格的语法，所以它不可能完全符合 Markdown 语法。尽管如此，大多数用 Markdown 编写的文档依然可以用 kramdown 很好地解析。
+
+
+
+### 源文件文本格式
+
+一个 kramdown 文本可以支持多种编码格式，比如 ASCII、UTF-8 和 ISO-8859-1，并且会将他们转化为和你源文件同样的编码格式。
+
+
+
+### Tab 的使用
+
+krandown 定义 tab 是四个空格，当在在列表的行首空格使用 tab 的时候，这点非常重要。并且，tab 只可以在行首使用，不可以用来代替空格，否则结果不可预测。
+
+
+
+### 自动和手动逃逸
+
+根据输出的形式，有一些常用字符需要特别对待，比如，当将一个 kramdowmn 文档转化为 HTML 的时候，需要特别注意“<”、“>”和“&”字符。为了放别对这些特殊字符的处理，它们会正确地自动根据输出方式逃逸。
+
+比如，你可以直接在 kramdown 文档中使用“<”、“>”和“&”字符，而不必去考虑它们在 HTML 中的使用。并且，如果你以 HTML 语言的形式或是 HTML 标签的形式使用使用这些字符的话，结果一样是正确的。
+
+因为 kramdown 也是用了一些字符去标记文本，所以这里有一种方法去实现这种字符的逃逸，这样它们就是自己本来的意思了。这是使用反斜杠逃逸。比如，你可以类似这样来使用单引号：
+
+```
+This \`is not a code\` span!
+```
+
+下面是一个包含全部可以逃逸的字符的列表：
+
+```
+\         反斜线
+.         点号
+*         星号
+_         下划线
++         加号
+-         减号
+=         等号
+`         撇号
+()[]{}<>  小、中、大括号、单书名号
+#         井号
+!         感叹号
+<<        双小于
+>>        双大于
+:         冒号
+|         单竖杠
+"         双引号
+'         单引号
+$         钱的符号
+```
+
+
+
+### 块边界
+
+一些块级元素必须以块边界来开始或是结束。这里有两种情况来使块边界发挥作用：
+
+* 如果块级元素必须以块边界来开始，那么它必须是一个空行，一个 EOB 标记，或是一个断掉的 IAL 或者它就是第一个元素。
+* 如果块级元素必须以块边界结束，那么它必须跟一个空行，一个 EOB 标记，或是一个断掉的 IAL 或者它就是最后元素。
+
+
+
+### 空行
+
+在 kramdown 中，任何一行只包含空字符例如空格或是 tab 就被认为是一个空行。一个或是多个连续的空行被认为是一个空行。空行被用来分割块级元素和其他部分，所以没有语义上的意思。
+
+但是，这里还是有一些空行有寓意的情况：
+
++ 在标题使用时
++ 在代码块中使用时
++ 在列表中使用时
++ 在数学快中使用时
++ 在用来做一些元素的块边界的时候
+
+
+
+### 段落
+
+一个段落的第一行可以加入三个空格的缩进，其他行可以有任意数量的缩进，因为段落支持自动换行。但是需要补充的一点就是，当一个“定义列表行”出现的时候，一个段落会自动中断。
+
+你可以用一个或多个空行来区分两个连续的段落。需要注意的是源文件中的一个空行并不意味着在输出文件中也是一个空行（因为“懒语法”）！如果你希望在输出中有一个空行（就好像 <br/> 标签），你需要在一行结束加上至少两个空格或是两个斜线！注意，一个段落的最后一行不可以是空行，这种空行会被忽略。开头和结尾的空格不会被纳入段落文字中。
+
+下面给出的是一个段落效果的举例（`⋅`代表空格）：
+
+```
+This para line starts at the first column. However,
+⋅⋅⋅⋅⋅⋅the following lines can be indented any number of spaces/tabs.
+⋅⋅⋅The para continues here.
+
+⋅⋅This is another paragraph, not connected to the above one. But⋅⋅
+with a hard line break. \\
+And another one.
+```
+
+效果如下：
+
+This para line starts at the first column. However,
+      the following lines can be indented any number of spaces/tabs.
+   The para continues here.
+
+  This is another paragraph, not connected to the above one. But  
+with a hard line break. \\
+And another one.
+
+
+
+### 标题
+
+krandown支持 “Setex” 和 “atx” 格式的标题。所有形式都可以在一个独立的文件中使用
+
+
+
+
+
+### 公式
+
+
+
+页面支持公式功能开启，在头文件添加：
 
 ```
 mathjax: true
@@ -40,7 +170,14 @@ $$
 
 效果：
 
-\$$f(n) = \begin{cases}0 && (n=0)\\1 && (n=1)\\f(n-1)+f(n-2) && (n\ge2)\\\end{cases}$$
+$$
+f(n) =
+\begin{cases}
+0 && (n=0)\\
+1 && (n=1)\\
+f(n-1)+f(n-2) && (n\ge2)\\
+\end{cases}
+$$
 
 
 
