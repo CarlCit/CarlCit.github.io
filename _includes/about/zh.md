@@ -2,23 +2,27 @@
 
 Hi，我是 Carl
 
-##### 一个喜欢折腾的人
+一个喜欢折腾的人
 
 
 
-我的观影记录
+[我的观影记录](http://localhost:4000/2021/01/11/my-movie/)
 
 
 
-我的数码产品
+[我的数码产品](http://localhost:4000/2021/01/11/my-digit/)
 
 
 
-我的常用软件
+[我的常用软件](http://localhost:4000/2021/01/11/my-app/)
 
 
 
-我的订阅服务
+[我的订阅服务](http://localhost:4000/2021/01/11/my-subscribe/)
+
+
+
+[浏览器插件](http://localhost:4000/2021/01/15/chrome-chajian/)
 
 
 
