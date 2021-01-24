@@ -1,12 +1,12 @@
 # Site settings
-title: CarlのBlog                     # 你的博客网站标题
+title: CarlのBlog           # 你的博客网站标题
 SEOTitle: CarlのBlog        # SEO，显示在浏览器上搜索的时候显示的标题
-header-img: img/home-bg.jpg        # 显示在首页的背景图片
+header-img: img/home-bg.jpg     # 显示在首页的背景图片
 email: carlsonglin@me.com
-description:  "个人学习笔记，经验分享"              # 网站介绍
+description:  "个人学习笔记，经验分享"         # 网站介绍
 keyword: "武汉同学, Carl, Blog, CarlBlog, 数码科技"    # 关键词
-url: "https://haijc.cn"           # 这个就是填写你的博客地址
-baseurl: ""                 # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://haijc.cn"       # 这个就是填写你的博客地址
+baseurl: ""        # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -78,7 +78,7 @@ ga_domain: haijc.cn
 
 # Sidebar settings
 sidebar: true                           # 是否开启侧边栏
-sidebar-about-description: "👋 一个喜欢折腾的数码爱好者<br>😍  产品 📱 ⌚️ 🖥 ⌨️ 💻<br>📌 求知若渴，虚心若愚～<br>📮 haijc@qq.com"  # 题图简单描述
+sidebar-about-description: "👋 一个喜欢折腾的数码爱好者<br>😍  产品 📱 💻 ⌚️ 🖥 ⌨️ <br>📌 求知若渴，虚心若愚。<br>📮 haijc#qq.com #->@"  # 题图简单描述
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
