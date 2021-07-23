@@ -44,9 +44,12 @@ sudo spctl --master-enable
 
 ```bash
 打开系统 terminal 终端
+
 输入一下命令后回车：
+
 sudo xattr -d com.apple.quarantine /Applications/xxxx.app
-（注意⚠️： /Applications/xxxx.app，换成你的App路径）
+
+（注意： /Applications/xxxx.app，换成你的App路径）
 ```
 
 
